@@ -32,3 +32,14 @@ ajax.open("GET", "https://cat-fact.herokuapp.com/facts");
 ajax.setRequestHeader('Content-type', 'application/json');
 ajax.send();
 
+var date = document.getElementById("date");
+var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = months[today.getMonth()];//String(today.getMonth() + 1).padStart(2, '0'); 
+var yyyy = today.getFullYear();
+
+today = mm + '/' + dd + '/' + yyyy;
+date.textContent = today;
+
