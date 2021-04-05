@@ -1,13 +1,3 @@
-h1 {
-    color: white;
-    background-color: darkblue;
-    border-radius: 10%;
-    width: 300;
-    width: -moz-fit-content;
-    width: fit-content;
-    display: table;
-}
-
 span {
     color: white;
     background-color: darkblue;
